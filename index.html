@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="convertor">
+    <br /><br />
+    <h2 class="title" >Number Base Convertor</h2>
+    <div class="select">
+      <div class="select1">
+        <span>from</span>
+        <select name="select1" id="select1" onchange="changed()">
+          <option value="Decimal">Decimal</option>
+          <option value="HexaDecimal">Hexadecimal</option>
+          <option value="Octal">Octal</option>
+          <option value="Binary">Binary</option>
+        </select>
+      </div>
+      <div class="select2">
+        <span>To</span>
+        <select name="select2" id="select2" onchange="changed()">
+          <option value="Binary">Binary</option>
+          <option value="Decimal">Decimal</option>
+          <option value="HexaDecimal">HexaDecimal</option>
+          <option value="Octal">Octal</option>
+        </select>
+      </div>
+    </div>
+    <br />
+
+    <div class="input">
+      <p id="label" style="color: green;"></p>
+      <input type="text" placeholder="Input here" id="input1" class="input1" />
+    </div>
+
+
+    <br />
+    <div class="buttons">
+      <button class="btn" onclick="convert()">Convert</button>
+      <button class="btn" onclick="swap()">Swap</button>
+    </div>
+
+    <p class="output" id="output">  Output will be here </p>
+    
+  </div>
+</body>
+<script src="index.js"></script>
+
+</html>
